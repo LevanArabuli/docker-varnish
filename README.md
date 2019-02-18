@@ -1,7 +1,7 @@
 # Varnish Docker container
 
 > Centos 7  
-> Varnish 4.x
+> Varnish 6.x
 
 ## Usage
 
@@ -32,7 +32,7 @@ backend default {
 You can configure Varnish daemon by following env variables:
 
 > **VCL_CONFIG** `/etc/varnish/default.vcl`  
-> **CACHE_SIZE** `64m`  
+> **CACHE_SIZE** `1G`  
 > **VARNISHD_PARAMS** `-p default_ttl=3600 -p default_grace=3600`
 
 
