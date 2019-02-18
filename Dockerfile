@@ -11,7 +11,7 @@ ADD start.sh /start.sh
 
 ENV VCL_CONFIG      /etc/varnish/default.vcl
 ENV CACHE_SIZE      1G
-ENV VARNISHD_PARAMS -p default_ttl=3600 -p default_grace=3600
+ENV VARNISHD_PARAMS -p default_ttl=600 -p default_grace=600
 
 CMD /start.sh
 EXPOSE 80
